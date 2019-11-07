@@ -5,7 +5,8 @@ import os, sys, re
 from geneLift import *
 from geneLift.utils import *
 
-scripts_path="/seq/schatz/sramakri/sources/geneLift/geneLift/scripts/"
+INST_DIR = dir = os.path.dirname(__file__)
+scripts_path=(os.path.join(INST_DIR, "geneLift/scripts/"))
 class Gmap:
     """ 
     Generate gene models from gmap

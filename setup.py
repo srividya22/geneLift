@@ -3,6 +3,9 @@ import versioneer
 
 requirements = [
     # package requirements go here
+    intervaltree_bio
+    gff3
+    gffutils
 ]
 
 setup(
@@ -16,7 +19,7 @@ setup(
     packages=['geneLift'],
     entry_points={
         'console_scripts': [
-            'geneLift=geneLift.cli:cli'
+            'geneLift=geneLift.py'
         ]
     },
     install_requires=requirements,
