@@ -1,31 +1,19 @@
+#!/usr/bin/env python
 from setuptools import setup
-import versioneer
+import glob
 
-requirements = [
-    # package requirements go here
-    intervaltree_bio
-    gff3
-    gffutils
-]
+scripts = glob.glob("*.p*")
 
 setup(
-    name='geneLift',
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
-    description="Gene model transfer from closely related reference genomes using cDNA alignments",
-    author="Srividya",
+    name='GeneLift',
+    version='v1.1',
+    description='A tool to order and orient genome assembly contigs via minimap2 alignments to a reference genome.',
+    author='Srividya Ramakrishnan',
     author_email='srividya.ramki@gmail.com',
-    url='https://github.com/srividya22/geneLift',
     packages=['geneLift'],
-    entry_points={
-        'console_scripts': [
-            'geneLift=geneLift.py'
-        ]
-    },
-    install_requires=requirements,
-    keywords='geneLift',
-    classifiers=[
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.6',
-    ]
+    package_dir={'geneLift': 'geneLift/'},
+    install_requires=[
+          ],
+    scripts=scripts,
+    zip_safe=True
 )
