@@ -37,18 +37,15 @@ optional arguments:
 ### Dependencies
 
 To install the dependencies do ( requires conda : https://docs.conda.io/projects/conda/en/latest/ )
-
+```
 git clone https://github.com/srividya22/geneLift.git
 cd geneLift
 chmod +x ./INSTALL.sh
 ./INSTALL.sh
-
+```
 
 
 ### Installation
-
-Currently, the only way to install RaGOO is from source. Set up a virtualenv if desired, just be sure to make a python3 environment. Then, enter the following command to install RaGOO:
-
 ```
 $ python setup.py install
 ```
