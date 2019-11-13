@@ -1,11 +1,11 @@
-# Running this script should be enough to install lalsuite and pycbc,
+# Running this script should be enough to install geneLift,
 # and set up the environment appropriately.  After this is executed,
 # you should be able to get back to this environment with the command
 #
-#   source activate lal
+#   source activate geneLift
 #
-# which sets up the conda environment, but also sources the LAL
-# environment scripts.  Note, however, that after the LAL scripts are
+# which sets up the conda environment, but also sources the geneLift
+# environment scripts.  Note, however, that after the geneLift scripts are
 # run, they cannot be undone (unlike conda's), so the environment will
 # be affected until you start a new shell.
 
